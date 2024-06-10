@@ -18,7 +18,7 @@ try {
          PreparedStatement pstmt = conn.prepareStatement("DELETE FROM emaillist WHERE no = ?")) {
 
         // no 값 바인딩
-        pstmt.setInt(1, Integer.parseInt(no));
+        pstmt.setString(1, no);
 
         int deletedCount = pstmt.executeUpdate();
         if (deletedCount == 1) {
