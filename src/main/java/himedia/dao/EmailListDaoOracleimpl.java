@@ -95,7 +95,7 @@ public class EmailListDaoOracleimpl implements EmaillistDao {
 			conn = getConnection();
 			// 실행 계획
 			String sql = "INSERT INTO emaillist (no, last_name, first_name, email)" +
-					"values (seq_emaillist_pk.nextval, ? ? ?)";
+					"values (seq_emaillist_pk.nextval, ?, ?, ?)";
 			pstmt = conn.prepareStatement(sql);
 			// 데이터 바인딩
 			pstmt.setString(1, vo.getLastName());

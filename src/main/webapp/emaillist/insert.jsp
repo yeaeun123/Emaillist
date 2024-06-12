@@ -50,7 +50,7 @@
 		} else {
 			*/
 	if(success) {
-		response.sendRedirect(request.getContextPath());
+		response.sendRedirect(request.getContextPath() + "/emaillist/index.jsp/");
 	} else {
 
 			%>
